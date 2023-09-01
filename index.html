@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="main-nav container flex">
+            <a href="/assets/" class="company-logo">
+                <img src="/assets/wepik-gradient-news-group-logo-20230714174705v7PK.png" alt="Company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <a href="/assets/" class="hover-link nav-link">Home</a>
+                    <li class="hover-link nav-item " id="bussiness" onclick="onNavItemClick('bussiness')">Bussiness</li>
+                    <li class="hover-link nav-item " id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item " id="entertainment" onclick="onNavItemClick('entertainment')">Entertainment</li>
+                    <li class="hover-link nav-item " id="technology" onclick="onNavItemClick('music')">Music</li>
+                    <li class="hover-link nav-item " id="cricket" onclick="onNavItemClick('ipl')">Cricket</li>
+                    <a href="/assets/about.html" class="hover-link nav-link">About Us</a>
+                </ul>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" class="news-input" id ="search-text" placeholder="e.g. Science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+    </main>
+    
+    <template id="template-news-card">
+        <div class="cards">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" 
+                     alt="news-image" id="news-img"></img>
+                </div>
+                <div class="card-content">
+                    <h3 id="new-title" >This is the Title</h3>
+                    <h6 class="news-source" id="news-source">End Gadget 07/12/02</h6>
+                    <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero aspernatur dolor quisquam, molestiae quis earum esse maiores eos assumenda vero?</p>
+                </div>
+            </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
